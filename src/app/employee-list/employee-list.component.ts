@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { NodeJSPathManipulation } from '@angular/compiler-cli/src/ngtsc/file_system/src/node_js_file_system';
 import { Component, OnInit } from '@angular/core';
+import { ItemComponent } from '../item/item.component';
 import { Employee } from './employee';
 
 @Component({
@@ -51,20 +52,21 @@ export class EmployeeListComponent implements OnInit {
     },
    
 ];
-  showEdit:boolean=false;
-  currentIndex:any;
-  constructor() { }
+  showEdit:boolean=true;
+ currentIndex:any;
+ constructor() { }
 
   ngOnInit(): void {
   }
+ 
 
-  EditEmp():void{
-    this.showEdit=true;
-  }
+  // EditEmp():void{
+  //   this.showEdit=true;
+  // }
 
-  UpdateEmp():void{
-    this.showEdit=false;
-  }
+  // UpdateEmp():void{
+  //   this.showEdit=false;
+  // }
 
 }
 

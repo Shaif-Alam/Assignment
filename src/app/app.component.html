@@ -1,16 +1,25 @@
-<div class="d-flex flex-row justify-content-between px-4 align-items-center bg-danger">
-    <h1 class="text-light">Employees</h1>
- <div>
-    <button routerLink="home" class="btn btn-success mr-2">Home</button>
 
-    <button routerLink="product" class="btn btn-primary mr-2">Product</button>
 
-    <button routerLink="contact" class="btn btn-dark"> Contact</button>
- </div>
+<div id="nav" class="d-flex flex-row justify-content-between px-4 align-items-center">
+
+   <button routerLink="employee" type="button" class="btn">
+      <h1 class="text-light">Employees</h1>
+   </button>
+   <div>
+
+      <button routerLink="home" class="btn btn-success mr-2">Home</button>
+
+      <button routerLink="product" class="btn btn-primary mr-2">Product</button>
+
+      <button routerLink="contact" class="btn btn-dark"> Contact</button>
+      
+      <button routerLink="signup" class="btn btn-dark ml-2">Sign Up</button>
+
+   <button routerLink="register" class="btn btn-danger ml-2">Register</button>
+   </div>
 </div>
 
-
-
-
-<app-employee-list></app-employee-list>
 <router-outlet></router-outlet>
+  <app-employee-list></app-employee-list> 
+<!-- <app-reactive-form></app-reactive-form>  -->
+<!-- <app-template-form></app-template-form> -->

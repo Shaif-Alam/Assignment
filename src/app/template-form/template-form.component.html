@@ -1,0 +1,31 @@
+<h1 class="d-flex justify-content-center">User Registration using Template driven form</h1>
+<div class="d-flex justify-content-center ">
+    <div>
+        <form #form="ngForm" (ngSubmit)="submit(form)">
+            <input class="form-control" type="text" name="name" ngModel placeholder="Full Name">
+            <br>
+            
+
+            <input class="form-control" type="email" name="email" ngModel placeholder="Email">
+            <br>
+
+            <input class="form-control" type="number" name="mobile" ngModel placeholder="Phone No.">
+            <br>
+
+            <input class="form-control" type="password" name="password" ngModel placeholder="Password">
+            <br>
+
+            <input class="form-control" type="password" name="confirm_password" ngModel placeholder="Confirm Password">
+            <br>
+
+            <input type="checkbox" class="checkbox-inline"><span>Agree with terms and conditions</span>
+            <br>
+            <br>
+
+            <button class="btn btn-primary">Sign Up</button>
+
+
+        </form>
+    </div>
+
+</div>

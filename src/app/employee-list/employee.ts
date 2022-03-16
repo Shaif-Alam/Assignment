@@ -7,3 +7,9 @@ export interface Employee {
     Email:string;
     Action:any;
 }
+
+export interface productlist{
+    Name:string;
+    price:number;
+
+}

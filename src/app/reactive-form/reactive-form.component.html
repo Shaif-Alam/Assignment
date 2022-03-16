@@ -1,0 +1,52 @@
+<h1 class="d-flex justify-content-center">Employee Registration Form</h1>
+<div class="d-flex justify-content-center">
+    <div>
+        <form [formGroup]="reactiveform">
+            <input class="form-control" type="text" name="name" placeholder="Full Name">
+
+            <span class="text-danger  font-weight-bold ">Full Name is required and must be a valid name</span>
+
+            <br>
+            <br>
+            <input class="form-control" type="email" name="email" placeholder="Email">
+
+            <span class="text-danger font-weight-bold">Email is required</span>
+            <br>
+            <br>
+            <input class="form-control" type="text" name="address" placeholder="Address">
+
+            <span class="text-danger font-weight-bold">Address is required</span>
+            <br>
+            <br>
+            <input class="form-control" type="text" name="city" placeholder="City">
+
+            <span class="text-danger font-weight-bold">City is required</span>
+            <br>
+            <br>
+
+            <input class="form-control" type="number" name="number" placeholder="Phone No.">
+
+            <span class="text-danger font-weight-bold">Phone is required</span>
+            <br>
+            <br>
+            <input class="form-control" type="password" name="password" placeholder="Password">
+
+            <span class="text-danger font-weight-bold">Password is required</span>
+            <br>
+            <br>
+            <input class="form-control" type="password" name="confirm_password" placeholder="Confirm Password">
+
+            <span class="text-danger font-weight-bold">Confirm password is required</span>
+            <br>
+            <br>
+            <input type="checkbox" class="checkbox-inline"><span>Agree with terms and conditions</span>
+
+            <br>
+            <br>
+            <button class="btn btn-primary">Register</button>
+
+
+        </form>
+    </div>
+
+</div>

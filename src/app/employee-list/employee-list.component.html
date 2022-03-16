@@ -1,9 +1,9 @@
 <!-- <-- <h1 class=" display-5">Employees</h1> -->
 
  
-<div>
+<div  >
     <table class="table table-bordered text-light">
-        <thead class="table-dark">
+        <thead>
             <tr>
                 <th>Employee Id</th>
                 <th>First Name</th>
@@ -11,10 +11,10 @@
                 <th>Salary</th>
                 <th>DOB</th>
                 <th>Email</th>
-                <!-- <th>Action</th> -->
+                <th>Details</th>
             </tr>
         </thead>
-        <tr *ngFor="let emp of employees;index as i">
+        <tr appCustomhover *ngFor="let emp of employees;index as i" >
             <ng-template [ngIf]="currentIndex != i">
                 <td>{{emp.EmployeeID}}</td>
             <td>{{emp.FirstName}}</td>
@@ -44,6 +44,15 @@
                     <input class="form-control" type="text" [(ngModel)]="emp.Email">
                 </td>
             </ng-template>
+            <td>
+               
+                    <div>
+                        <button routerLink="viewDetails"  class="btn btn-primary px-3">View details</button>
+                    </div>
+               
+            </td>
+        </tr>
+          
          <!--    <td>
                 <ng-template [ngIf]="currentIndex != i">
                     <div>
@@ -56,7 +65,8 @@
                     </div>
                 </ng-template>
             </td> -->
-        </tr>
+      
 
     </table>
 </div>
+
