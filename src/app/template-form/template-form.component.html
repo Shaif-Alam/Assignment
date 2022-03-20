@@ -1,24 +1,38 @@
 <h1 class="d-flex justify-content-center">User Registration using Template driven form</h1>
 <div class="d-flex justify-content-center ">
     <div>
-        <form #form="ngForm" (ngSubmit)="submit(form)">
-            <input class="form-control" type="text" name="name" ngModel placeholder="Full Name">
+        <form #form="ngForm">
+            <input class="form-control" type="text" required name="name" ngModel #fullname="ngModel" placeholder="Full Name">
+            
+            <span class="forError" *ngIf="fullname.errors?.['required'] && fullname.touched">Name is Required for form !
+                !</span>
+                <br>
+                
+
+            <input class="form-control" type="email"  required name="email" ngModel #email="ngModel" name="email" ngModel placeholder="Email">
+            
+            <span class="forError" *ngIf="email.errors?.['required'] && email.touched">Please enter your email !
+            </span>
             <br>
             
 
-            <input class="form-control" type="email" name="email" ngModel placeholder="Email">
-            <br>
+            <input class="form-control" type="number"  required name="number" ngModel  #number="ngModel" name="mobile" ngModel placeholder="Phone No.">
+            
+            <span class="forError" *ngIf="number.errors?.['required'] && number.touched">Please enter Number
+                !</span>
+                <br>
 
-            <input class="form-control" type="number" name="mobile" ngModel placeholder="Phone No.">
-            <br>
+            <input class="form-control" type="password"  required name="password" name="password" ngModel  #password="ngModel" ngModel placeholder="Password">
+            
+            <span class="forError" *ngIf="password.errors?.['required'] && password.touched">Enter your Password !
+                !</span>
+                <br>
 
-            <input class="form-control" type="password" name="password" ngModel placeholder="Password">
-            <br>
-
-            <input class="form-control" type="password" name="confirm_password" ngModel placeholder="Confirm Password">
-            <br>
-
-            <input type="checkbox" class="checkbox-inline"><span>Agree with terms and conditions</span>
+            <input class="form-control" type="password"    required name="confirm_password" ngModel  #confirm_password="ngModel" name="confirm_password" ngModel placeholder="Confirm Password">
+            
+             <span class="forError" *ngIf="confirm_password.errors?.['required'] && confirm_password.touched">Enter your confirm password !</span>
+<br>
+            <input type="checkbox" class="checkbox-inline"><span id="span2">Agree with terms and conditions</span>
             <br>
             <br>
 

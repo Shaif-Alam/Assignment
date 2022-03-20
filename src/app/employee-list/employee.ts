@@ -9,7 +9,7 @@ export interface Employee {
 }
 
 export interface productlist{
-    Name:string;
-    price:number;
+    Name:any;
+    price:any;
 
 }

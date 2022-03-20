@@ -15,8 +15,8 @@ import { CustomhoverDirective } from './customhover.directive';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { LoginformComponent } from './loginform/loginform.component';
-import { LoginFormComponent } from './assignment11/login-form/login-form.component'
+import { LoginFormComponent } from './assignment11/login-form/login-form.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,8 @@ import { LoginFormComponent } from './assignment11/login-form/login-form.compone
     CustomhoverDirective,
     ReactiveFormComponent,
     TemplateFormComponent,
-    LoginformComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
